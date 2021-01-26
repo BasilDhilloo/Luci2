@@ -9,14 +9,16 @@ import Team from '../team/Team';
 import Login from '../login/Login';
 import Error404 from '../Error404/Error404';
 import About from '../about/About';
+import Teamprofile from '../team/teamProfile/Teamprofile';
 
 function main() {
     return (
         <div>
              {/* <Header /> */}
-            {/* <Home />     */}
+            <Home />    
+            {/* <Teamprofile /> */}
             {/* <Team /> */}
-            <Error404 />
+            {/* <Error404 /> */}
             {/* <About /> */}
             {/* <PricingTwo /> */}
             {/* <Signup /> */}

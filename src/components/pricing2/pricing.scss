@@ -83,7 +83,7 @@
       background-color: #fff;
       
       p {
-        font-family: Montserrat;
+        font-family: "Montserrat";
         font-style: normal;
         font-weight: normal;
         font-size: 14px;
@@ -94,7 +94,7 @@
       }
       
       .price {
-        font-family: Montserrat;
+        font-family: "Montserrat";
         font-style: normal;
         font-weight: normal;
         font-size: 18px;
@@ -115,7 +115,7 @@
         list-style: none;
         margin-bottom: .5rem;
         background-color: #fff;
-        font-family: Montserrat;
+        font-family: "Montserrat";
         font-style: normal;
         font-weight: normal;
         font-size: 18px;
@@ -162,7 +162,7 @@
 }
 
 .rowOne h2{
-  font-family: Roboto;
+  font-family: "Roboto";
   font-style: normal;
   font-weight: bold;
   font-size: 65px;
@@ -173,7 +173,7 @@
 .rowOne p{
   margin-top: 20px;
   margin-bottom: 10px;
-  font-family: Roboto;
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 300;
   font-size: 20px;
@@ -182,4 +182,39 @@
   letter-spacing: 0.05em;
   color: #414441;
 
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .container{
+    margin-bottom: 85px;
+  }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .container{
+    margin-bottom: 65px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .container{
+    margin-bottom: 45px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .container{
+    margin-bottom: 25px;
+  }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .container{
+    margin-bottom: 5px;
+  }
 }

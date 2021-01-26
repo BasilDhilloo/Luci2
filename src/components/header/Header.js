@@ -17,9 +17,10 @@ export default function Header() {
 
       <Navbar.Collapse id="responsive-navbar-nav" >
         <Nav className="navbar-nav ml-auto">
-          <Nav.Link href="#about"><h4 className={styles.linkText}>About</h4></Nav.Link>
+          <Nav.Link href="/about"><h4 className={styles.linkText}>About</h4></Nav.Link>
           <Nav.Link href="/pricing"><h4 className={styles.linkText}>Pricing</h4></Nav.Link>
-          <Nav.Link href="#team"><h4 className={styles.linkText}> Team</h4></Nav.Link>
+          <Nav.Link href="/team"><h4 className={styles.linkText}> Team</h4></Nav.Link>
+          <Nav.Link href="/team"><h4 className={styles.linkText}> Contact</h4></Nav.Link>
         </Nav>
       </Navbar.Collapse>
 

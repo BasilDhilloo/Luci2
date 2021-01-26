@@ -4,11 +4,15 @@ import bgImage from './../../assets/bg-luci.jpg';
 import luciImage from './../../assets/Luci.png';
 import signImg from './../../assets/log-in.png'
 import loginImg from './../../assets/Group 10.png'
+import Header from '../header/Header';
+import Footer from '../footer/Footer';
 
 export class Home extends Component {
     render() {
         return (
-           <section className={styles.home}>
+        <div>
+            <Header />
+            <section className={styles.home}>
                <div className="container-fluid" style={{height:"800px"}}>
                    <div className="row" id="rowId">
                         <div className="col-lg-6 col-md-8 col-sm-12 col-xs-12">
@@ -23,7 +27,7 @@ export class Home extends Component {
                             </div>
                         </div>
                         <div className="row" id={styles.marginClass}>
-                            <button className={styles.homeButtonSign}> <img src={signImg} alt="SignIn Image" /> Sign up</button>    
+                            <button className={styles.homeButtonSign} onClick='/Signup'> <img src={signImg} alt="SignIn Image" /> Sign up</button>    
                         </div>
 
                         <div className="row" id={styles.marginClass}>        
@@ -33,6 +37,9 @@ export class Home extends Component {
                 </div>
             </div>
         </section>
+        <Footer />
+    </div>
+           
         )
     }
 }

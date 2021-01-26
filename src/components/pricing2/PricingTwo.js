@@ -99,7 +99,7 @@ function PricingTwo() {
   };
   
 	return (
-    <div>
+    <div style={{backgroundColor:"white"}}>
       <Header />
         <div className="container">
             <div className="rowOne">
@@ -112,7 +112,7 @@ function PricingTwo() {
                 all products.</p>
             </div>
         </div>
-    
+    <div className="container">
 		<div className="app-wrapper">
             
             {
@@ -127,6 +127,8 @@ function PricingTwo() {
               })
             }
             </div>
+    </div>
+
         <Footer />
     </div>
 
@@ -136,7 +138,7 @@ function PricingTwo() {
 const cardsData = [
   {
     id: 1,
-    type: 'basic',
+    type: 'Premium',
     title: ' Basic',
     description: 'Lorem ipsum',
     price:  5.00,
@@ -148,7 +150,7 @@ const cardsData = [
   },
   {
     id: 2,
-    type: 'Standard',
+    type: 'Premium',
     title: 'Standard',
     description: 'Lorem ipsum',
     price: 20.00,
