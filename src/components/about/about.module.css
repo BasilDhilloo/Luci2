@@ -23,12 +23,13 @@
 .teamText1 {
     margin-top: 20px;
     margin-bottom: 60px;
-    font-family: Roboto;
+    font-family: "Rouge Script";
     font-style: normal;
-    font-weight: bold;
-    font-size: 65px;
-    line-height: 76px;
+    font-weight: normal;
+    font-size: 80px;
+    line-height: 94px;
     text-align: center;
+
     color: #84017E;
 
 }
@@ -54,7 +55,7 @@
 
 .loginDivp1 {
     padding: 60px 56px;
-    font-family: Roboto;
+    font-family: "Roboto";
     font-style: normal;
     font-weight: 300;
     font-size: 19px;
@@ -67,7 +68,7 @@
 
 }
 .loginDivp2{
-    font-family: Roboto;
+    font-family: "Roboto";
     font-style: normal;
     font-weight: 300;
     font-size: 20px;
@@ -76,6 +77,8 @@
     text-align: center;
     letter-spacing: 0.05em;
     color: #414441;
+    padding-bottom: 30px;
+    background-color: white;
 }
 
 .loginDivp2 b{
@@ -90,6 +93,7 @@ li {
 {
     justify-content: center;
     display: flex;
+    background-color: white;
 }
 
 

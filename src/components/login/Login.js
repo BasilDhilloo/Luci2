@@ -6,11 +6,12 @@ import luciImage from './../../../src/assets/LuciLogin.png';
 import bgImage from './../../../src/assets/background.jpeg';
 import Header from './../header/Header'
 import Footer from '../footer/Footer';
+import {Link} from "react-router-dom"
 
 
 const Login = () => {
     return (
-        <div>
+        <div style={{backgroundColor:"whitez"}} className>
              <Header />
         <div className={styles.color}>
                 <img src={bgImage} alt="Background Image" />
@@ -31,7 +32,7 @@ const Login = () => {
                             
                             <div className="container" style={{marginLeft:"185px"}}>
                                 <div className="row" id={styles.marginClass}>
-                                    <button className={styles.homeButtonSign}> <img src={signImg} alt="SignIn Image" /> Sign up</button>
+                                    <button component={Link} to="/signin" className={styles.homeButtonSign}> <img src={signImg} alt="SignIn Image" /> Sign up</button>
                                 </div>
 
                                 <div className="row" id={styles.marginClass}>

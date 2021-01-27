@@ -13,29 +13,21 @@ export class Home extends Component {
         <div>
             <Header />
             <section className={styles.home}>
-               <div className="container-fluid" style={{height:"800px"}}>
-                   <div className="row" id="rowId">
-                        <div className="col-lg-6 col-md-8 col-sm-12 col-xs-12">
-                            <div className="row" id={styles.marginClass}>
-                                <div className={styles.homeLuci}>
-                                    <img className={styles.homeLuciImg} src={luciImage} alt="Lucy Image" />
-                                </div>      
-                            </div>
-                        <div className="row" id={styles.marginClass}>
-                            <div className={styles.homeLuciText}>
-                                <p> An interactive real estate investting asssistant</p>
-                            </div>
-                        </div>
-                        <div className="row" id={styles.marginClass}>
-                            <button className={styles.homeButtonSign} onClick='/Signup'> <img src={signImg} alt="SignIn Image" /> Sign up</button>    
-                        </div>
+               <div className="container-fluid" >
 
-                        <div className="row" id={styles.marginClass}>        
-                            <button className={styles.homeButtonLogin}> <img src={loginImg} alt="LogIn Image" /> Login </button>
-                        </div>
+                   <div className="row">
+                            <p className={styles.homeLuciImg}> Luci </p>
+                            <p className={styles.homeLuciText}>An interactive real estate investting asssistant</p>
+                    </div>  
+
+                    <div className="row">
+                            <button className={styles.homeButtonSign}> <img src={signImg} alt="SignIn Image" /> Sign up</button>    
                     </div>
+
+                    <div className="row">        
+                            <button className={styles.homeButtonLogin}> <img src={loginImg} alt="LogIn Image" /> Login </button>
+                    </div>    
                 </div>
-            </div>
         </section>
         <Footer />
     </div>

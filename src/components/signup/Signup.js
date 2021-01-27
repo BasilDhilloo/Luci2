@@ -5,11 +5,14 @@ import loginImg from './../../../src/assets/Group 10.png'
 import luciImage from './../../../src/assets/LuciLogin.png';
 import bgImage from './../../../src/assets/background.jpeg';
 import Header from './../header/Header'
+import Footer from '../footer/Footer';
 
 
 const Signup = () => {
     return (
-        <div className={styles.color}>
+      <div>
+        <Header />
+            <div className={styles.color}>
                 <img src={bgImage} alt="Background Image" />
                 <div className={styles.center}>
                     {/* <img src={bgImage} alt="Background Image" /> */}
@@ -21,10 +24,10 @@ const Signup = () => {
                                 <p> An interactive real estate investing assistant</p>
                             </div>
 
-                            <div className="form-group">
+                            {/* <div className="form-group">
                                 {/* <label for="inputdefault">Default input</label> */}
-                                <input className="form-control"  type="text"  placeholder="Alpha Name"></input> 
-                            </div>
+                                {/* <input className="form-control"  type="text"  placeholder="Alpha Name"></input> 
+                            </div> */} 
 
                             <div>
                                 <li><input className={styles.loginInput}  type="text" placeholder="First Name" /></li>
@@ -33,13 +36,13 @@ const Signup = () => {
                                 <li><input className={styles.loginInput}  type="text" placeholder="Town/City" /></li>
                                 <li><input className={styles.loginInput}  type="text" placeholder="State" /></li>
                                 <ul className={styles.myrow}>
-                                    <li style={{marginRight:"-15px"}}><input className={styles.loginInputSingle}  type="text" placeholder="Zip Code" /></li>
+                                    <li ><input className={styles.loginInputSingle}  style={{marginLeft: "146px"}} type="text" placeholder="Zip Code" /></li>
                                     <li><input className={styles.loginInputSingle}  type="text" placeholder="Instant Strategy" /></li>
                                 </ul>
                                
                             </div>
                             
-                            <div className="container" style={{marginLeft:"185px"}}>
+                            <div className="container" style={{marginLeft:"185px", marginTop: "-35px"}}>
                                 <div className="row" id={styles.marginClass}>
                                     <button className={styles.homeButtonSign}> <img src={signImg} alt="SignIn Image" /> Sign up</button>
                                 </div>
@@ -52,6 +55,9 @@ const Signup = () => {
                     </div>
                 </div>
             </div>
+            <Footer />
+      </div>
+
 
    
 

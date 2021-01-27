@@ -15,15 +15,27 @@
 }
 
 .homeLuciImg{
-    height: 146px; 
-    width: 266px;
+    font-family: "Rouge Script";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 180px;
+    /* identical to box height */
+
+
+color: #800080;
 }
 
 .homeLuciText{
-    position: absolute;
-    margin-top: 300px;
-    margin-left: -150px;
-    color: #4B176A;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+    
+    text-align: center;
+    
+    color: #800080;
 }
 
 .homeButtonSign{
@@ -62,7 +74,7 @@
 }
 
 #marginClass{
-    margin-left: 50px;
+    /* margin-left: 50px; */
 }
 
 
@@ -73,6 +85,49 @@
     margin-left: 4px;
 }
 
+@media only screen and (max-width: 370px) {
+    .homeLuci{
+        position: absolute;
+        width: fit-content;
+        margin-left: -20px;
+        margin-top: 36px;   
+    }
+
+    .homeLuciImg{
+        font-size: 140px !important;
+        margin-left: -70px !important;
+        margin-top: 96px !important;
+    }
+
+    .homeLuciText{
+        position: absolute;
+        margin-top: 300px;
+        margin-left: -40px !important;
+        color: #4B176A;
+        font-size: 22px;
+    }
+
+    .homeButtonSign{
+        width: 305px;
+        height: 55px;
+        margin-top: 117px !important;
+        margin-left: 20px;
+    }
+
+    .homeButtonLogin{
+        width: 305px;
+        height: 55px;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+
+    .home{
+        background:url("./../../assets/background-2-m.jpg");
+        background-size: 100% 100%;
+        height: 100vh;
+        width: 100%;
+    }
+  }
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     .homeLuci{
@@ -83,16 +138,15 @@
     }
 
     .homeLuciImg{
-        height: 101px;
-        width: 170px;
-        margin-left: 40px;
-        margin-top: 36px;
+        font-size: 140px;
+        margin-left: -70px;
+        margin-top: 96px;
     }
 
     .homeLuciText{
         position: absolute;
-        margin-top: 198px;
-        margin-left: -56px;
+        margin-top: 300px;
+        margin-left: 0px;
         color: #4B176A;
         font-size: 22px;
     }
@@ -100,15 +154,15 @@
     .homeButtonSign{
         width: 305px;
         height: 55px;
-        margin-top: 340px;
-        margin-left: -20px;
+        margin-top: 250px;
+        margin-left: 20px;
     }
 
     .homeButtonLogin{
         width: 305px;
         height: 55px;
         margin-top: 20px;
-        margin-left: -20px;
+        margin-left: 20px;
     }
 
     .home{
@@ -119,7 +173,7 @@
     }
   }
   
-  /* Small devices (portrait tablets and large phones, 600px and up) */
+  /* Small devices (portrait tablets and large phones, 600px and up)  Ipad */
   @media only screen and (min-width: 600px) {
     .homeLuci{
         position: absolute;
@@ -168,36 +222,36 @@
     }
 
     .homeLuciImg{ 
-        height: 126px;
-        width: 208px;
-        margin-left: -5px;
+        font-size: 180px;
+        margin-left: 25px;
         margin-top: 36px;
     }
 
     .homeLuciText{
+        
         position: absolute;
-        margin-top: 207px;
-        margin-left: -79px;
+        margin-top: 257px;
+        margin-left: -99px;
         color: #4B176A;
-        font-size: 24px;
+        font-size: 25px;
     }
 
     .homeButtonSign{  
         width: 310px;
         height: 70px;
-        margin-top: 340px;
-        margin-left: -20px;
+        margin-top: 290px;
+        margin-left: 40px;
     }
 
     .homeButtonLogin{  
         width: 310px;
         height: 70px;
         margin-top: 20px;
-        margin-left: -20px;
+        margin-left: 40px;
     }
   } 
   
-  /* Large devices (laptops/desktops, 992px and up) */
+  /* Large devices (laptops/desktops, 992px and up) ipad pro */
   @media only screen and (min-width: 992px) {
     .homeLuci{
         position: absolute;
@@ -215,24 +269,24 @@
 
     .homeLuciText{
         position: absolute;
-        margin-top: 211px;
-        margin-left: -110px;
+        margin-top: 269px;
+        margin-left: -205px;
         color: #4B176A;
-        font-size: 26px;
+        font-size: 28px;
     }
 
     .homeButtonSign{  
         width: 340px;
         height: 72px;
         margin-top: 352px;
-        margin-left: -20px;
+        margin-left: 30px;
     }
 
     .homeButtonLogin{  
         width: 340px;
         height: 72px;
         margin-top: 20px;
-        margin-left: -20px;
+        margin-left: 30px;
     }
   } 
   
@@ -254,10 +308,12 @@
 
     .homeLuciText{
         position: absolute;
-        margin-top: 208px;
-        margin-left: -130px;
+        margin-top: 286px;
+        margin-left: 20px;
+        text-align: left;
+        /* margin-left: 50px; */
         color: #4B176A;
-        font-size: 26px;
+        font-size: 28px;
     }
 
     .homeButtonSign{  

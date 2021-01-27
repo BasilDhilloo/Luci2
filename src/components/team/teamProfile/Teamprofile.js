@@ -113,7 +113,7 @@ const Teamprofile = () => {
 
                 <h1 className={styles.heading}> In The Pipeline </h1>
                 <div className="wrapper3" style={{backgroundColor:"#E5E5E5"}}>
-                    <div className="row" style={{margin:"10px 15px"}}>
+                    <div className="row" style={{margin:"10px 10px"}}>
                         <div className="wrapper2 col-6" style={{margin:"20px 0px 25px 5px"}}>
                                 <Table hover>
                                 <caption style={{captionSide:"top"}}>Under Contract</caption>
