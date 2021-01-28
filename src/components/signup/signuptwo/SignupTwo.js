@@ -53,20 +53,20 @@ const Form = props => (
      <FormInput   placeholder="State" type="text"/>
      <FormInput   placeholder="Zip Code" type="number" />
      <FormInput   placeholder="Instant Strategy" type="text"/>
-     <FormButton title="Sign up">  </FormButton>
+     <FormButton title="Sign up" />  
      <FormButton  title="Login"/>
    </div>
 </>
 );
 
 const FormButton = props => (
-  <div id={styles.button} class={styles.row}>
+  <div id={styles.button} className={styles.row}>
     <button> {props.title}</button>
   </div>
 );
 
 const FormInput = props => (
-  <div class={styles.row}>
+  <div className={styles.row}>
     <label>{props.description}</label>
     <input id={props.id} type={props.type} placeholder={props.placeholder}/>
   </div>  

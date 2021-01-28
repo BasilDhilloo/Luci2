@@ -114,7 +114,7 @@ const Teamprofile = () => {
                 <h1 className={styles.heading}> In The Pipeline </h1>
                 <div className="wrapper3" style={{backgroundColor:"#E5E5E5"}}>
                     <div className="row" style={{margin:"10px 10px"}}>
-                        <div className="wrapper2 col-6" style={{margin:"20px 0px 25px 5px"}}>
+                        <div className="wrapper2 col-sm-5 col-md-5 col-lg-6" style={{margin:"20px 0px 25px 5px"}}>
                                 <Table hover>
                                 <caption style={{captionSide:"top"}}>Under Contract</caption>
                                     <Thead>
@@ -132,7 +132,7 @@ const Teamprofile = () => {
                                 </Table>
                         </div>
 
-                        <div className="wrapper2 col-5" id="mobiletbl">
+                        <div className="wrapper2 col-sm-5 col-md-4 col-lg-4" id="mobiletbl">
                                 <Table hover>
                                 <caption style={{captionSide:"top"}}>Submitted Offers</caption>
                                     <Thead>
@@ -156,12 +156,7 @@ const Teamprofile = () => {
                     </div>                    
                 {/* </div> */}
 
-                
-                    
-                        
-                
-              
-
+        
                 <div className="wrapper3" style={{margin:"30px 130px", margin:"auto"}}>
                     <div className="row" style={{backgroundColor:"#FFEAFF"}}>
                         <h1 className={styles.heading}> Analyzed Properties </h1>

@@ -167,9 +167,7 @@ caption{
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-    .col-6, .col-5{
-        flex: 0 0 100%;
-    };
+  
     
     #mobiletbl{
         margin:20px 15px 25px 4px;
@@ -199,6 +197,6 @@ caption{
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
     #mobiletbl{
-        margin:20px 15px 25px 100px;
+        margin: 20px 15px 25px 170px;
     }
 }

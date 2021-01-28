@@ -52,8 +52,7 @@ html{
   flex-direction: column;
   align-items: center;
   padding-top: 1.25rem;
-  max-width: 100%;
-  
+  max-width: 100%; 
 }
 
 .row input{
@@ -191,4 +190,23 @@ html{
   .loginform{
     height: 85%;
   }
+
+  /* .row button{
+    padding-bottom: 0.5rem;
+    margin-top: 21px;
+} */
+
+.row{
+  padding-top: 5px;
+}
+
+#headerTitle{
+  padding: 1rem 0;
+}
+
+
+.row button{
+  height: 45px;
+  margin-top: 13px;
+}
 }
