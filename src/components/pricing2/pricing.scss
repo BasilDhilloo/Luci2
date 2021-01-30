@@ -10,13 +10,14 @@
   }
   
   .app-wrapper {
-      display: flex;  
+    display: flex;  
     flex-wrap: wrap;  
-      align-items: center;
-      justify-content: space-around;
-    height: 100vh;
+    align-items: center;
+    justify-content: space-around;
+    height: 61vh;
     padding: 2rem;
-    overflow: auto;
+    margin-bottom: 10px;
+    overflow: hidden;
   }
   
   .card {
@@ -25,7 +26,7 @@
     border-radius: 35px;
     box-shadow: 1px 1px 10px 1px #ddd;
     margin-bottom: 1rem;
-    max-height: 480px;
+    max-height: 400px;
     max-width: 300px;
     // padding: 1rem 0;
     position: relative;
@@ -67,13 +68,13 @@
     &-billing,
     &-features,
     &-action {
-      padding: 15px;
+      padding: 10px;
     }
     
     &-header {
       // background-color: #4B176A;
       h2 { 
-        font-size: 26px;
+        font-size: 22px;
         margin-top: 0px;
         color: #ecf0f1;
       }
@@ -86,8 +87,8 @@
         font-family: "Montserrat";
         font-style: normal;
         font-weight: normal;
-        font-size: 14px;
-        line-height: 17px;
+        font-size: 12px;
+        line-height: 10px;
         text-align: center;
         letter-spacing: 0.04em;
         background-color: #fff;
@@ -98,7 +99,7 @@
         font-style: normal;
         font-weight: normal;
         font-size: 18px;
-        line-height: 17px;
+        line-height: 10px;
         text-align: center;
         letter-spacing: 0.04em;
         color: rgba(0, 0, 0, 0.6);
@@ -107,34 +108,40 @@
     }
     
     &-features {
-      padding-top: 10px;
+      // padding-top: 5px;
       min-height: 150px;
       background-color: #fff;
+
+      ul{
+        padding: 0px 0px 0px 0px;
+      }
       
       ul li {
         list-style: none;
-        margin-bottom: .5rem;
+        // padding-bottom: .25rem;
         background-color: #fff;
         font-family: "Montserrat";
         font-style: normal;
         font-weight: normal;
-        font-size: 18px;
-        line-height: 17px;
+        font-size: 16px;
+        // line-height: 17px;
         line-height: 25px;
-        text-align: justify;
         text-align: center;
-        letter-spacing: 0.04em;
+        letter-spacing: 0.03rem;
         color: rgba(0, 0, 0, 0.6);
+        margin: 3px;
       }
     }
     
     &-action {
       background-color: #fff;
+      padding: 8px;
       > button {
         border: 1px solid #4B176A;
         ;
         background-color: transparent;
         color:#4B176A;
+        position: inherit;
         cursor: pointer;
         font-size: 16px;
         font-weight: 600;
@@ -166,12 +173,12 @@
   font-style: normal;
   font-weight: bold;
   font-size: 65px;
-  line-height: 76px;
+  line-height: 60px;
   color: #4B176A;
 }
 
 .rowOne p{
-  margin-top: 20px;
+  margin-top: 10px;
   margin-bottom: 10px;
   font-family: "Roboto";
   font-style: normal;
@@ -185,24 +192,56 @@
 }
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 375px) {
   .container{
     margin-bottom: 85px;
+  }
+  .app-wrapper{
+    margin-bottom: 40px;
+    overflow:auto;
   }
 
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+@media only screen and (max-width: 600px) {
   .container{
-    margin-bottom: 65px;
+    margin-bottom: 70px;
+  }
+
+  // .card{
+  //   margin: 10px 0px;
+  // }
+
+  .app-wrapper{
+    margin-bottom: 40px;
+    overflow: auto;
+    // margin-bottom: 70px;
+  }
+
+  .rowOne{
+    margin-bottom: 100px;
   }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-  .container{
-    margin-bottom: 45px;
+@media only screen and (max-width: 768px) {
+  // .container{
+  //   margin-bottom: 45px;
+  // }
+  // .card{
+  //   margin: 10px 0px;
+  // }
+
+  .app-wrapper{
+    margin-bottom: 70px;
+    overflow: auto;
+  }
+  .rowOne{
+    width: 100%;
+    height: 90px;
+    padding: 0px 0px;
+    margin-bottom: 140px;
   }
 }
 
@@ -211,10 +250,20 @@
   .container{
     margin-bottom: 25px;
   }
+  .rowOne{
+    width: 100%;
+    height: 90px;
+    padding: 0px 0px;
+  }
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   .container{
     margin-bottom: 5px;
+  }
+  .rowOne{
+    width: 100%;
+    height: 90px;
+    padding: -10px 0px;
   }
 }

@@ -39,11 +39,6 @@ const FormHeader = props => (
 
 
 const Form = props => (
-<>
-    {/* <div>
-        <li><input className={styles.loginInput} id={styles.userIcon} style={{textIndent:"17px"}} type="text" placeholder="User Name" /></li>
-        <li><input className={styles.loginInput} id={styles.passIcon} style={{textIndent:"17px", marginTop:"10px"}} type="password" placeholder="Password" /></li>
-    </div> */}
 
    <div>
      <FormInput   placeholder="First Name" type="text" />
@@ -52,16 +47,17 @@ const Form = props => (
      <FormInput   placeholder="Town/City" type="text" />
      <FormInput   placeholder="State" type="text"/>
      <FormInput   placeholder="Zip Code" type="number" />
-     <FormInput   placeholder="Instant Strategy" type="text"/>
+     <FormInput   placeholder="Instant Strategy" type="text" style={{marginBottom:"20px"}}/>
      <FormButton title="Sign up" />  
      <FormButton  title="Login"/>
+     
    </div>
-</>
+
 );
 
 const FormButton = props => (
   <div id={styles.button} className={styles.row}>
-    <button> {props.title}</button>
+    <button style={{marginLeft:"28px"}}> {props.title}</button>
   </div>
 );
 

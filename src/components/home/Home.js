@@ -1,13 +1,19 @@
 import React, { Component } from 'react';
 import styles from "./home.module.css";
-import bgImage from './../../assets/bg-luci.jpg';
-import luciImage from './../../assets/Luci.png';
+// import bgImage from './../../assets/bg-luci.jpg';
+// import luciImage from './../../assets/Luci.png';
 import signImg from './../../assets/log-in.png'
 import loginImg from './../../assets/Group 10.png'
 import Header from '../header/Header';
 import Footer from '../footer/Footer';
+import {withRouter} from 'react-router-dom';
+// import SignupTwo from "./components/signup/signuptwo/SignupTwo"
 
 export class Home extends Component {
+    nextPath(path) {
+        this.props.history.push(path);
+    }
+
     render() {
         return (
         <div>
@@ -21,11 +27,11 @@ export class Home extends Component {
                     </div>  
 
                     <div className="row">
-                            <button className={styles.homeButtonSign}> <img src={signImg} alt="SignIn Image" /> Sign up</button>    
+                            <button onClick={() => this.nextPath('/signup')} className={styles.homeButtonSign}> <img src={signImg} alt="SignIn Image" /> Sign up</button>    
                     </div>
 
                     <div className="row">        
-                            <button className={styles.homeButtonLogin}> <img src={loginImg} alt="LogIn Image" /> Login </button>
+                            <button onClick={() => this.nextPath('/login')} className={styles.homeButtonLogin}> <img src={loginImg} alt="LogIn Image" /> Login </button>
                     </div>    
                 </div>
         </section>
@@ -36,4 +42,4 @@ export class Home extends Component {
     }
 }
 
-export default Home;
+export default withRouter(Home);

@@ -10,12 +10,14 @@ import Login from '../login/Login';
 import Error404 from '../Error404/Error404';
 import About from '../about/About';
 import Teamprofile from '../team/teamProfile/Teamprofile';
+import SidenavTwo from './../mainProperty/sidenav2/SidenavTwo'
 
 function main() {
     return (
         <div>
              {/* <Header /> */}
             <Home />    
+            {/* <SidenavTwo /> */}
             {/* <Teamprofile /> */}
             {/* <Team /> */}
             {/* <Error404 /> */}

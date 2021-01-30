@@ -14,8 +14,8 @@ function About() {
                             <div className={styles.loginDiv}>
                                 <p className={styles.loginDivp1}>
                                 Luci is a real estate investing solution that is taylored to provide services from start 
-                                to finish of a property investment Luci will provide anelysis of a potential property, calculat 
-                                projecte rturns, track the development of the investment, and even calculate the actual returns of 
+                                to finish of a property investment. Luci will provide analysis of a potential property, calculate
+                                projecte returns, track the development of the investment, and even calculate the actual returns of 
                                 the investment.
                                 </p>
 
@@ -26,7 +26,7 @@ function About() {
                                         2. New Construction - <b>Sell</b><br />
                                         3. New construction - <b>Sold </b><br />
                                         4. <b>Fix</b> and <b> FLIP</b><br />
-                                        5. <b>whole saling . </b><br />
+                                        5. <b>Whole saling . </b><br />
                                     <br /> <br /> Automate the backend of real estate investing .
                                     </p>
                                 </div>

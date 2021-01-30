@@ -56,7 +56,7 @@ const Form = props => (
 
 const FormButton = props => (
   <div id={styles.button} class={styles.row}>
-    <button> {props.title}</button>
+    <button style={{marginLeft:"25px"}}> {props.title}</button>
   </div>
 );
 

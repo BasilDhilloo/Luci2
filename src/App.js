@@ -12,6 +12,7 @@ import Signup from "./components/signup/Signup";
 import Teamprofile from './components/team/teamProfile/Teamprofile';
 import LoginTwo from './components/login2/LoginTwo';
 import SignupTwo from "./components/signup/signuptwo/SignupTwo"
+import Property from './components/mainProperty/property/Property'
 
 function App() {
   return (
@@ -20,14 +21,15 @@ function App() {
                 <Switch>
                     <Route exact path={`${process.env.PUBLIC_URL}/`} component={Main}/>
                     <Route exact path={`${process.env.PUBLIC_URL}/pricing`} component={PricingTwo}/>
-                    <Route exact path={`${process.env.PUBLIC_URL}/login`} component={Login}/>
+                    {/* <Route exact path={`${process.env.PUBLIC_URL}/login`} component={Login}/> */}
                     <Route exact path={`${process.env.PUBLIC_URL}/error404`} component={Error404} />
                     <Route exact path={`${process.env.PUBLIC_URL}/team`} component={Team} />
                     <Route exact path={`${process.env.PUBLIC_URL}/about`} component={About} />
-                    <Route exact path={`${process.env.PUBLIC_URL}/signup`} component={Signup} />
+                    {/* <Route exact path={`${process.env.PUBLIC_URL}/signup`} component={Signup} /> */}
                     <Route exact path={`${process.env.PUBLIC_URL}/teamprofile`} component={Teamprofile} />
-                    <Route exact path={`${process.env.PUBLIC_URL}/logintwo`} component={LoginTwo} />
-                    <Route exact path={`${process.env.PUBLIC_URL}/signuptwo`} component={SignupTwo} />
+                    <Route exact path={`${process.env.PUBLIC_URL}/login`} component={LoginTwo} />
+                    <Route exact path={`${process.env.PUBLIC_URL}/signup`} component={SignupTwo} />
+                    <Route exact path={`${process.env.PUBLIC_URL}/property`} component={Property} />
                 </Switch>
             </BrowserRouter>
     </div>

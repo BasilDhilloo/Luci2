@@ -86,6 +86,10 @@ color: #800080;
 }
 
 @media only screen and (max-width: 370px) {
+    .rowOne{
+        overflow: auto;
+    }
+
     .homeLuci{
         position: absolute;
         width: fit-content;
@@ -130,6 +134,10 @@ color: #800080;
   }
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+    .rowOne{
+        overflow: auto;
+    }
+    
     .homeLuci{
         position: absolute;
         width: fit-content;
@@ -278,7 +286,7 @@ color: #800080;
     .homeButtonSign{  
         width: 340px;
         height: 72px;
-        margin-top: 352px;
+        margin-top: 320px;
         margin-left: 30px;
     }
 
@@ -319,7 +327,7 @@ color: #800080;
     .homeButtonSign{  
         width: 390px;
         height: 80px;
-        margin-top: 362px;
+        margin-top: 330px;
         margin-left: 20px;
     }
 
