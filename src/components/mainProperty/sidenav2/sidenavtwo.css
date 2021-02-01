@@ -1,14 +1,16 @@
-/* .ant-menu-item{
+.ant-menu-item{
     color: #ffffff !important;
     font-family: "Roboto";
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 140.69%;
-    identical to box height, or 23px 
-    text-align: center;
+    /* identical to box height, or 23px  */
+    /* text-align: center; */
     letter-spacing: 0.05em;
     color: #FFFFFF;
+    /* padding-left: 0px; */
+    /* padding-right: 100px; */
 }
 
 
@@ -21,4 +23,34 @@
     background-color: orange;
     color: #4B176A !important;
 } 
- */
+
+
+
+/* Main outer div */
+.ant-layout-content{
+    /* background-color:chartreuse; */
+    background-color: #E5E5E5;
+    padding: 7px 50px !important;
+    height: 100vh;
+}
+
+
+/* Second div */
+.ant-layout-has-sider {
+    /* background-color: green; */
+    background-color: #ffffff;
+    padding: 20px 30px 20px 30px !important;
+/* margin-bottom: 50px; */
+    height: 99vh;
+}
+
+/* This is the div for sidebar and content */
+.ant-layout-sider, .ant-layout-content-second{
+    height: 95vh !important;
+    background-color: #ffffff !important;
+}
+
+
+
+
+

@@ -11,12 +11,14 @@ import Error404 from '../Error404/Error404';
 import About from '../about/About';
 import Teamprofile from '../team/teamProfile/Teamprofile';
 import SidenavTwo from './../mainProperty/sidenav2/SidenavTwo'
+import Property from '../mainProperty/property/Property';
 
 function main() {
     return (
         <div>
              {/* <Header /> */}
-            <Home />    
+             <Property />
+            {/* <Home />     */}
             {/* <SidenavTwo /> */}
             {/* <Teamprofile /> */}
             {/* <Team /> */}
