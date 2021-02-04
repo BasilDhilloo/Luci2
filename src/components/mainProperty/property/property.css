@@ -14,9 +14,9 @@
  /* }*/
 
 .flex-child {
-    min-width: 0;
-    flex-shrink: 2;
-    flex-wrap: wrap;
+    /*min-width: 0;*/
+    /*flex-shrink: 2;*/
+    /*flex-wrap: wrap;*/
     /*flex-grow: 2;*/
 
 
