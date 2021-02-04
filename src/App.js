@@ -12,7 +12,17 @@ import Signup from "./components/signup/Signup";
 import Teamprofile from './components/team/teamProfile/Teamprofile';
 import LoginTwo from './components/login2/LoginTwo';
 import SignupTwo from "./components/signup/signuptwo/SignupTwo"
-import Property from './components/mainProperty/property/Property'
+import Expense from './components/expense/Expense'
+import Acquisition from "./components/acquisition/Acquisition";
+import Property from "./components/mainProperty/property/Property";
+import Financing from "./components/financing/Financing";
+import Renovation from "./components/renovation/Renovation";
+import Expense2 from "./components/expense/Expense2";
+import Assumptions from "./components/assumptions/Assumptions";
+import Report from "./components/report/Report";
+import Contact from "./components/contact/Contact";
+import Profile from "./components/profile/Profile";
+import PaymentDetails from "./components/payment_details/PaymentDetails";
 
 function App() {
   return (
@@ -30,6 +40,20 @@ function App() {
                     <Route exact path={`${process.env.PUBLIC_URL}/login`} component={LoginTwo} />
                     <Route exact path={`${process.env.PUBLIC_URL}/signup`} component={SignupTwo} />
                     <Route exact path={`${process.env.PUBLIC_URL}/property`} component={Property} />
+
+                    <Route exact path={`${process.env.PUBLIC_URL}/expense`} component={Expense} />
+                    <Route exact path={`${process.env.PUBLIC_URL}/acquisition`} component={Acquisition} />
+                    <Route exact path={`${process.env.PUBLIC_URL}/financing`} component={Financing} />
+                    <Route exact path={`${process.env.PUBLIC_URL}/renovation`} component={Renovation} />
+                    <Route exact path={`${process.env.PUBLIC_URL}/expense2`} component={Expense2} />
+                    <Route exact path={`${process.env.PUBLIC_URL}/assumptions`} component={Assumptions} />
+                    <Route exact path={`${process.env.PUBLIC_URL}/report`} component={Report} />
+                    <Route exact path={`${process.env.PUBLIC_URL}/contact_us`} component={Contact} />
+                    <Route exact path={`${process.env.PUBLIC_URL}/profile`} component={Profile} />
+                    <Route exact path={`${process.env.PUBLIC_URL}/payment_details`} component={PaymentDetails} />
+
+
+
                 </Switch>
             </BrowserRouter>
     </div>
